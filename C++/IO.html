@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Learn++</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/owl.carousel.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+
+</head>
+</html>
+
+</head>
+<body>
+	
+
+	<!-- Header section -->
+	<header class="header-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6">
+					<div class="site-logo">	
+						<h1  id="heading">Learn<span style="color:white">++</span></h1>
+					</div>
+					<div class="nav-switch">
+						<i class="fa fa-bars"></i>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6">
+					<!-- <a href="" class="site-btn header-btn">Login</a> -->
+					<nav class="main-menu">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="aboutus.html">About us</a></li>
+							<!-- <li><a href="courses.html"></a></li> -->
+							<!-- <li><a href="blog.html">News</a></li> -->
+							<li><a href="contact.html">Contact</a></li>
+							<li><a href="exercise.html">Exercise</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Header section end -->
+
+
+	<!-- Page info -->
+	<div class="page-info-section set-bg" data-setbg="img/page-bg/4.jpg">
+		<div class="container">
+			<div class="site-breadcrumb">
+				<a href="intro.html">Home</a>
+				<span><a href="content.html">Content</a><a href="IO.html">Input/Output</a></span>
+			</div>
+		</div>
+	</div>
+	<!-- intro content -->
+	<div>
+		<div class="container" id="introd">
+			<div class="row">
+				<div class="col-lg-12 col-sm-12">
+				<h3>Basic Input / Output in C++</h3>
+				<p>
+					C++ comes with libraries which provides us with many ways for performing input and output. In C++ input and output is performed in the form of a sequence of bytes or more commonly known as streams. The two keywords cout and cin are used very often for taking inputs and printing outputs.
+					<ul>
+						<li>
+							<span>Input Stream:</span> If the direction of flow of bytes is from the device(for example, Keyboard) to the main memory then this process is called input.
+						</li>
+						<li>
+							<span>Output Stream:</span> If the direction of flow of bytes is opposite, i.e. from main memory to device( display screen ) then this process is called output.
+
+						</li>
+						<strong>Header files available in C++ for Input/Output operations are: </strong>
+						<ol>
+							<li>
+								<span>iostream:</span> iostream stands for standard input-output stream. This header file contains definitions of objects like cin, cout, cerr, etc.
+							</li>
+							<li>
+								<span>iomanip:</span> iomanip stands for input-output manipulators. The methods declared in these files are used for manipulating streams. This file contains definitions of setw, setprecision, etc.
+							</li>
+							<li>
+								<span>fstream:</span> This header file mainly describes the file stream. This header file is used to handle the data being read from a file as input or data being written into the file as output.
+							</li>
+						</ol>
+					</ul>
+				</p>
+				<p>The two keywords cout in C++ and cin in C++ are used very often for printing outputs and taking inputs respectively. These two are the most basic methods of taking input and printing output in C++. To use cin and cout in C++ one must include the header file iostream in the program.
+					<br>
+				This article mainly discusses the objects defined in the header file iostream like the cin and cout.  </p>
+		
+				<ul>
+				<li>
+					<span>Standard output stream (cout):</span> Usually the standard output device is the display screen. The C++ cout statement is the instance of the ostream class. It is used to produce output on the standard output device which is usually the display screen. The data needed to be displayed on the screen is inserted in the standard output stream (cout) using the insertion operator(<<).
+					<img src="img/cout.png">
+<br>
+					In the above program, the insertion operator(<<) inserts the value of the string variable sample followed by the string “A computer science portal for geeks” in the standard output stream cout which is then displayed on the screen.
+				</li>
+				<li>
+					<span>standard input stream (cin)</span> Usually the input device in a computer is the keyboard. C++ cin statement is the instance of the class istream and is used to read input from the standard input device which is usually a keyboard. 
+The extraction operator(>>) is used along with the object cin for reading inputs. The extraction operator extracts the data from the object cin which is entered using the keyboard.
+<br>
+				<img src="img/cin.png">
+			<br>
+			The above program asks the user to input the age. The object cin is connected to the input device. The age entered by the user is extracted from cin using the extraction operator(>>) and the extracted data is then stored in the variable age present on the right side of the extraction operator.
+				</li>
+				<li>
+					<span>Un-buffered standard error stream (cerr): </span> The C++ cerr is the standard error stream that is used to output the errors. This is also an instance of the ostream class. As cerr in C++ is un-buffered so it is used when one needs to display the error message immediately. It does not have any buffer to store the error message and display it later.
+The main difference between cerr and cout comes when you would like to redirect output using “cout” that gets redirected to file if you use “cerr” the error doesn’t get stored in file.(This is what un-buffered means ..It cant store the message)
+
+				<br>
+				<img src="img/cerr.png">
+			<br>
+
+				</li>
+				<li>
+					<span>buffered standard error stream (clog): </span> This is also an instance of ostream class and used to display errors but unlike cerr the error is first inserted into a buffer and is stored in the buffer until it is not fully filled. or the buffer is not explicitly flushed (using flush()). The error message will be displayed on the screen too.
+					<br>
+				<img src="img/clog.png">
+			<br>
+				</li>
+				
+					
+				</ul>
+				<a href="operator.html"><span id="next">NEXT &#8594;</span></a>
+			</div>
+
+
+			</div>
+		</div>
+		
+	</div>
+	<footer class="footer-section spad pb-0">
+		<div class="footer-top">
+			<div class="footer-warp">
+				<div class="row">
+					<div class="widget-item">
+						<h4>Contact Info
+						<ul class="contact-list">
+							<li><i class="fa fa-map-marker"></i>1481 ABC LANE <br>XYZ strees, latifabad,hyd</li>
+							<li>+9233333333333</li>
+							<li>maryabaloch01@gmail.com</li>
+							<li>fatimaanosha48@gmail.com</li>
+						</ul>
+					</div>
+					<div class="widget-item">
+						<h4>Quick Links
+						<ul>
+							<li><a href="intro.html"> Introduction</a></li>
+							<li><a href="basic.html">Basics</a></li>
+							<li><a href="datatype.html">Data Types</a></li>
+							<li><a href="IO.html">Basic I/O</a></li>
+							<li><a href="operator.html">Operators</a></li>
+							<li><a href="array.html">Arrays</a></li>
+
+						</ul>
+					</div>
+
+					<div class="widget-item">
+						<h4>Owner
+						<ul>
+							<li><i class="fa fa-envelope"></i>feedback@ learn++@gmail.com</li>
+							<li><a href=""> &#xa9;Copyright Policy</a></li>
+							
+						</ul>
+					</div>
+					<div class="widget-item">
+						<h4>Socials</h4>
+						<a href="https://www.facebook.com/"  id="fa" class="fa fa-facebook"></a>
+						<a href="https://twitter.com/"  id="fa" class="fa fa-twitter"></a>
+
+					</div>
+					
+				</div>
+			</div>
+		
+	</footer>
+
+
+	<!--====== Javascripts & Jquery ======-->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/mixitup.min.js"></script>
+	<script src="js/circle-progress.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
